@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soledad Bot — Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #0d0d14;
+            color: #e8d5c4;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            color: #d99a82;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .price-badge {
+            background: linear-gradient(135deg, #d99a82, #c47d5e);
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding: 10px 36px;
+            border-radius: 50px;
+            margin: 16px 0 36px;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 20px rgba(217,154,130,0.4);
+        }
+
+        .subtitle {
+            color: #a08070;
+            margin-bottom: 36px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .qr-grid {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .qr-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(217,154,130,0.25);
+            border-radius: 20px;
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            backdrop-filter: blur(8px);
+        }
+
+        .qr-card img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #fff;
+            padding: 8px;
+        }
+
+        .qr-label {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: #d99a82;
+            letter-spacing: 0.08em;
+        }
+
+        .back-link {
+            margin-top: 40px;
+            color: #a08070;
+            text-decoration: none;
+            font-size: 0.88rem;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .back-link:hover { color: #d99a82; border-color: #d99a82; }
+    </style>
+</head>
+<body>
+    <div class="logo">✦ Soledad Bot</div>
+    <h1>💎 Premium</h1>
+    <div class="price-badge">5 USD</div>
+    <p class="subtitle">Escanea uno de los siguientes códigos QR para completar tu pago.</p>
+
+    <div class="qr-grid">
+        <div class="qr-card">
+            <img src="qr-paypal.jpeg" alt="QR PayPal">
+            <span class="qr-label">PayPal</span>
+        </div>
+        <div class="qr-card">
+            <img src="qr-breb.jpeg" alt="QR Bre-B / Nequi">
+            <span class="qr-label">Bre-B / Nequi</span>
+        </div>
+    </div>
+
+    <a href="javascript:window.close()" class="back-link">← Volver</a>
+</body>
+</html>
